@@ -1,0 +1,64 @@
+.cont{
+    position: relative;
+    width:400px ;
+    height: 400px;
+    background-color: yellow;
+    border: 1px solid blueviolet;
+    margin: 20px;
+}
+
+.ani{
+    width:50px ;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    
+    /* animation-delay: 5s; */
+    /* animation-iteration-count: infinite;
+    animation-direction: reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+} 
+
+@keyframes example {
+    0%{
+        top:0;
+        left:0;
+        background-color: aqua;
+        transform: rotate(0deg);
+    }
+        
+    20%{
+        top:0;
+        left:350px;
+        background-color: antiquewhite;
+        transform: rotate(0deg);
+        animation-delay: 1s; 
+        
+    }
+    50%{
+        top:350px;
+        left:350px;
+        background-color: rgb(215, 250, 224);
+        transform: rotate(360deg);
+        
+       
+    }
+    75%{
+        top:350px;
+        left:0;
+        background-color: rgb(250, 221, 215);
+        transform: rotate(0deg);
+       
+    }
+    100%{
+        top:0;
+        left:0;
+        background-color: rgb(250, 215, 245);
+        transform: rotate(360deg);
+        
+    }
+    
+}
